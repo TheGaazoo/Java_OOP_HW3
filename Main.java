@@ -24,13 +24,13 @@ public class Main {
     public static void main(String[] args) {
         
         // Создаем и добавляем в сет элементы с одинаковыми компонентами
-        Set<PharmancyComponent> result = new HashSet<>();
-        result.add(new PharmancyComponent("Вода", "5", 15));
-        result.add(new PharmancyComponent("Вода", "5", 15));
-        result.add(new PharmancyComponent("Азитронит", "2", 6));
-        result.add(new PharmancyComponent("Пинициллин", "2", 6));
-        result.add(new PharmancyComponent("Пинициллин", "8", 10));
-        System.out.println(result + "\n");
+        Set<PharmancyComponent> Pharmacy = new HashSet<>();
+        Pharmacy.add(new PharmancyComponent("Вода", "5", 15));
+        Pharmacy.add(new PharmancyComponent("Вода", "5", 15));
+        Pharmacy.add(new PharmancyComponent("Азитронит", "2", 6));
+        Pharmacy.add(new PharmancyComponent("Пинициллин", "2", 6));
+        Pharmacy.add(new PharmancyComponent("Пинициллин", "8", 10));
+        System.out.println(Pharmacy + "\n");
 
         // Создаем список компонентов
         List<PharmancyComponent> pharmacy1 = List.of(
@@ -77,7 +77,7 @@ public class Main {
         Collections.sort(drugs);
         System.out.println(drugs);
         System.out.println("Размер сета с лекарствами: " + drugs.size());
-        System.out.println("Количество уникальных компонентов для изготовления лекарств в сете: " + result.size());
+        System.out.println("Количество уникальных компонентов для изготовления лекарств в сете: " + Pharmacy.size());
     }
 }
 
